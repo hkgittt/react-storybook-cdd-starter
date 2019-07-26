@@ -1,0 +1,43 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-undef": "error",
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/explicit-function-return-type": [
+      "warn",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "max-len": ["error", { "code": 80 }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ]
+}
