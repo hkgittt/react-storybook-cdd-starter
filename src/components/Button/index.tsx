@@ -1,7 +1,7 @@
 import React from "react";
 
 interface ButtonProps {
-  label: string;
+  label?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ label = "Click Me" }) => (
