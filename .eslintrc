@@ -4,6 +4,10 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended"
   ],
+  "plugins": [
+    "cypress",
+    "chai-friendly"
+  ],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -21,7 +25,8 @@
         "allowTypedFunctionExpressions": true
       }
     ],
-    "max-len": ["error", { "code": 80 }]
+    "max-len": ["error", { "code": 80 }],
+    "chai-friendly/no-unused-expressions": 2
   },
   "settings": {
     "react": {
@@ -30,7 +35,9 @@
   },
   "env": {
     "node": true,
-    "browser": true
+    "browser": true,
+    "mocha": true,
+    "cypress/globals": true
   },
   "overrides": [
     {

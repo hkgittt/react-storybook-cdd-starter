@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test:cypress": "cypress open"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +24,10 @@
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "babel-loader": "^8.0.6",
+    "cypress": "^3.4.1",
     "eslint": "^6.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cypress": "^2.6.1",
     "eslint-plugin-react": "^7.14.3",
     "typescript": "^3.5.3",
     "webpack": "^4.37.0",
