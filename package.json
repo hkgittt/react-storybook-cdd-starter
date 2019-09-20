@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:watch": "npm run test -- --watch",
     "build": "webpack --mode production",
     "storybook": "start-storybook"
   },
