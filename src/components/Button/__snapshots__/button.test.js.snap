@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sample test renders facebook button correctly 1`] = `
+<button>
+  Facebook
+</button>
+`;
+
+exports[`Sample test renders google button correctly 1`] = `
+<button>
+  Google
+</button>
+`;
